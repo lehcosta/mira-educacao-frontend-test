@@ -1,6 +1,15 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from "react";
+import { connect } from "react-redux";
 
-class App extends Component {
+import peopleActions from "../redux/people/actions";
+
+const { fetchPeople } = peopleActions;
+
+class App extends PureComponent {
+  componentDidMount() {
+    this.props.fetchPeople();
+  }
+
   render() {
     return (
       <div className="App">
@@ -22,4 +31,7 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(
+  null,
+  { fetchPeople }
+)(App);
