@@ -1,5 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import { Route } from "react-router-dom";
 
@@ -13,7 +12,4 @@ const Routes = ({ history }) => {
   );
 };
 
-export default connect(
-  null,
-  {}
-)(Routes);
+export default Routes;
