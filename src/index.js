@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 
+import "./shared/theme.css";
+
 import App from "./app";
 
 ReactDOM.render(<App />, document.getElementById("root"));
