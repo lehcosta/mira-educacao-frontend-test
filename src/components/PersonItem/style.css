@@ -1,0 +1,7 @@
+.personitem {
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  padding: 9px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
