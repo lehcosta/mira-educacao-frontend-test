@@ -51,6 +51,19 @@ export default function reducer(state = initState, action) {
         }
       };
 
+    case actions.FETCH_PEOPLE_SET_PAGE:
+      return {
+        ...state,
+        list: {
+          ...state.list,
+          loading: true,
+          meta: {
+            ...state.list.meta,
+            current_page: action.payload.page
+          }
+        }
+      };
+
     default:
       return state;
   }

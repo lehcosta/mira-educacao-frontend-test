@@ -3,6 +3,8 @@ const actions = {
   FETCH_PEOPLE_SUCCESS: "FETCH_PEOPLE_SUCCESS",
   FETCH_PEOPLE_FAILURE: "FETCH_PEOPLE_FAILURE",
 
+  FETCH_PEOPLE_SET_PAGE: "FETCH_PEOPLE_SET_PAGE",
+
   fetchPeople: payload => ({
     type: actions.FETCH_PEOPLE,
     payload
@@ -15,6 +17,11 @@ const actions = {
 
   fetchPeopleFailure: payload => ({
     type: actions.FETCH_PEOPLE_FAILURE,
+    payload
+  }),
+
+  fetchPeopleSetPage: payload => ({
+    type: actions.FETCH_PEOPLE_SET_PAGE,
     payload
   })
 };
